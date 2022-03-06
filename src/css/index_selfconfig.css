@@ -1,0 +1,5 @@
+/*设置元素溢出部分宽度隐藏*/
+html{
+    width:100%;
+    overflow-x:hidden;
+  }

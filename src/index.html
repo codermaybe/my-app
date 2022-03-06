@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    
+    <!--
+    	electron自带设置 （弃用）  <link rel="stylesheet" href="index.css" />
+    -->
+    <link rel="stylesheet" href="css/index_selfconfig.css" />
+    <title>P2P局域网聊天工具</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.4.1/dist/css/bootstrap.min.css" >
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    
+   <!--左上角图标-->
+   <link rel="shortcut icon" href="img/聊天.png" />
+
+  </head>
+  <body background="img/index_background.png" style="background-size: cover;background-repeat: no-repeat;">
+  	
+  	
+  	<div class="row">
+  		 <div class="col-sm-8 col-md-8 col-lg-8 col-sm-push-2 col-md-push-2 col-lg-push-2 " style="text-align: center;" >
+  		 	<br><br /><br />
+        <h1 id="notice">在下方输入名字</h1>
+  		 	<hr />
+  		 </div>
+  		
+  	</div>
+  	<div class="row">
+  		<div class="col-sm-6 col-md-6 col-lg-6 col-sm-push-3 col-md-push-3 col-lg-push-3">
+  		<label for="username"><p style="font-size: 24px;font-style:inherit;">姓名</p></label> <input type="text" class="form-control" id="username"/>
+  		</div>
+  		
+  	</div>
+  	<div class="row">
+  		<div class="col-sm-6 col-md-6 col-lg-6 col-sm-push-3 col-md-push-3 col-lg-push-3">
+  		<label for="userinfo"><p style="font-size: 24px;font-style:inherit;">备注(可不填)</p></small></label> 
+  		
+  		<textarea rows="4" class="form-control" id="userinfo" style="overflow: visible; resize: none; " ></textarea>
+  		</div>
+  		
+  	</div>
+  	<br />
+  		<div class="container"> 
+    <div class="row">
+        <div  class="col-sm-6 col-md-6 col-lg-6 col-sm-push-3 col-md-push-3 col-lg-push-3"> 
+           <p> 
+              <button type="button" class="btn btn-primary btn-lg btn-block" id="index_confirm" onclick="checkinfo()">开始聊天 </button> 
+           </p> 
+        </div>
+    </div>
+</div>
+  		
+  	</div>
+  	
+  
+    
+    
+    
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="jquery-3.6.0.js" ></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="bootstrap-3.4.1/dist/js/bootstrap.min.js"></script>
+    <!--自定义获取输入框元素脚本-->
+    <script src="js/index_selfconfig.js"></script>
+  </body>
+</html>
